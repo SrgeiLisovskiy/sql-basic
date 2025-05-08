@@ -1,9 +1,8 @@
-CREATE TABLE PERSONS
+CREATE TABLE CUSTOMERS
 (
-    name    VARCHAR(50)                         NOT NULL,
-    surname VARCHAR(50)                         NOT NULL,
-    age     INT                                 NOT NULL,
-    phone_number VARCHAR(20),
-    city_of_living VARCHAR(50)                  NOT NULL,
-    PRIMARY KEY(name, surname, age)
+    id INT  PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+    name    VARCHAR(50),
+    surname VARCHAR(50),
+    age     INT,
+    phone_number VARCHAR(20)
 );
